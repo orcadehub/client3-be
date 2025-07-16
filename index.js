@@ -6,7 +6,7 @@ require("dotenv").config();
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:5174", // allow Vite frontend
+    origin: ["http://localhost:5174", "https://www.accelmindssolutions.com"],
     methods: ["GET", "POST"],
     credentials: true,
   })
